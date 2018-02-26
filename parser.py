@@ -87,6 +87,11 @@ def process_file(datetime_start, datetime_end, file_name):
                 if line_match:
                     process_line(line_match, datetime_start, datetime_end)
 
+        show_result()
+
+
+def show_result():
+    """show results"""
     if duration.duration != 0:
         rate = sum(code_counter.values())/duration.duration
     else:
